@@ -10,8 +10,6 @@ pipeline {
     stage('Build') {
       steps {
         chmod +x './gradlew'
-        ./gradlew assemble
-        ./gradlew check
       }
     }
 
