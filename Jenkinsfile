@@ -10,8 +10,7 @@ pipeline {
     stage('Build') {
       steps {
         echo 'test'
-        sh './gradlew assemble'
-        sh './gradlew check'
+        sh './jenkins_build.sh'
       }
     }
 
